@@ -204,12 +204,11 @@ public class Bitboard {
 
                         //Checks if slot is empty, if so moves piece through toggling.
                         else if(util.getBit(p2, position) == 0){
-                            p1 = util.toggleBit(p1,piece); p1 = util.toggleBit(p1, position); System.out.println("TEST2");
+                            p1 = util.toggleBit(p1,piece); p1 = util.toggleBit(p1, position);
 
                             //After a successful movement, if the position is at the end of the enemy board it will be kinged.
                             if(position > 55 && position < 63){
                                 makeKing(1, position);
-                                System.out.println("TEST");
                             }
 
                             return true;
@@ -405,7 +404,6 @@ public class Bitboard {
         }
 
         else {
-            System.out.println("loop here");
             return false;}
 
     }
